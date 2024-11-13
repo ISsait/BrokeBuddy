@@ -1,0 +1,118 @@
+// Purpose: Contains the common styles used in the application.
+import { StyleSheet } from 'react-native';
+
+export const commonStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    view: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    text: {
+        fontSize: 18,
+        marginBottom: 10,
+    },
+    fab: {
+        position: 'absolute',
+        margin: 16,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'limegreen',
+        borderColor: 'darkgreen',
+        borderWidth: 1,
+        borderRadius: 50,
+        height: 60,
+        width: 60,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5,
+    },
+    fabIcon: {
+        width: 24,
+        height: 24,
+    },
+    headerText: {
+        fontSize: 24,
+        textAlign: 'center',
+        color: 'white',
+    },
+    card: {
+        flex: 1,
+        flexDirection: 'row',
+        padding: 15,
+        marginVertical: 5,
+        width: '100%',
+        justifyContent: 'space-between',
+    },
+    cardText: {
+        fontSize: 16,
+    },
+    list: {
+        width: '100%',
+        paddingTop: 10,
+    },
+    detailsCard: {
+        padding: 15,
+        marginVertical: 5,
+        justifyContent: 'center',
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 10,
+        width: '90%',
+    },
+    detailCardTitle: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        alignSelf: 'center',
+    },
+    detailsText: {
+        fontSize: 18,
+        marginBottom: 10,
+        alignSelf: 'center',
+    },
+    input: {
+        height: 45,
+        marginTop: 20,
+        marginLeft: 20,
+        marginBottom: 5,
+        borderWidth: 1,
+        padding: 10,
+        width: '90%',
+        borderBlockColor: 'black',
+        borderRadius: 10,
+        fontSize: 18,
+        textAlignVertical: 'top',
+    },
+    submitButton: {
+        margin: 20,
+        width: '50%',
+        alignSelf: 'center',
+        borderRadius: 10,
+        borderColor: 'black',
+        borderWidth: 1,
+        padding: 10,
+        backgroundColor: '#429AF3',
+    },
+    submitButtonText: {
+        fontSize: 20,
+        textAlign: 'center',
+        color: 'white',
+        fontWeight: 'bold',
+    },
+    errorText: {
+        color: 'red',
+        marginLeft: 25,
+    },
+});
