@@ -8,7 +8,7 @@ import {useState} from 'react';
 import RadioButtonList from '../components/RadioButtonList';
 import TransactionEditor from '../components/TransactionEditor';
 import * as utility from '../../utility';
-import SubmitButton from '../components/submitButton';
+import SubmitButton from '../components/SubmitButton';
 
 const options = Object.values(utility.TransactionType).filter((type) => typeof type === 'string');
 
@@ -88,7 +88,10 @@ export default function AddEditScreen({route, navigation} : {route : any, naviga
             const newTransaction = {...currentTransaction, id};
             utility.addEditTransaction(newTransaction);
 
-            navigation.goBack();
+            navigation.reset({
+                index: 0,
+                routes: [{ name: 'Home' }],
+            });
             console.log('submitted');
             Alert.alert('Transaction Added', 'Transaction has been added successfully.');
         }

@@ -115,4 +115,12 @@ export const commonStyles = StyleSheet.create({
         color: 'red',
         marginLeft: 25,
     },
+    emptyScreenText: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        margin: 20,
+        textAlign: 'center',
+    },
 });
